@@ -3,22 +3,34 @@ package com.example.sqlite12;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     DBHelper dbh;
     EditText eName,eSurname,eSection,eSex,eAge,eSalary,eID;
-    Button btnAddData,btnEditData,btnDeleteData,btnViewAll;
+    Button btnAddData,btnEditData,btnDeleteData,btnViewAll,btnback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btnback = findViewById(R.id.btnback);
+        btnback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent home = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(home);
+            }
+        });
+
 
         eName = findViewById(R.id.txtName);
         eSurname = findViewById(R.id.txtSurName);
@@ -44,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 boolean IsSucceed= dbh.AddData(eName.getText().toString(),eSurname.getText().toString(),eSection.getText().toString(),eSex.getText().toString(),mAge,mSalary);
                 if (IsSucceed){
                     ClearText();
-                    ShowInfo("ข้อความจากแอพ","เพิ่มข้อมูล สำเร็จ");
+                    ShowInfo("RECORD System","เพิ่มข้อมูล สำเร็จ");
                 }else {
-                    ShowInfo("ข้อความจากแอพ","ไม่สามารถเพิ่มข้อมูลได้");
+                    ShowInfo("RECORD System","ไม่สามารถเพิ่มข้อมูลได้");
                 }
 
 
@@ -60,9 +72,10 @@ public class MainActivity extends AppCompatActivity {
                 int mSalary = Integer.parseInt(eSalary.getText().toString());
                 boolean IsSucceed= dbh.UpdateData(eName.getText().toString(),eSurname.getText().toString(),eSection.getText().toString(),eSex.getText().toString(),mAge,mSalary,eID.getText().toString());
                 if (IsSucceed){
-                    ShowInfo("ข้อความจากแอพ","แก้ไขข้อมูล สำเร็จ");
+                    ClearText();
+                    ShowInfo("RECORD System","แก้ไขข้อมูล สำเร็จ");
                 }else {
-                    ShowInfo("ข้อความจากแอพ","ไม่สามารถเแก้ไขข้อมูลได้");
+                    ShowInfo("RECORD System","ไม่สามารถเแก้ไขข้อมูลได้");
                 }
             }
         });
@@ -72,9 +85,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Integer delRowQty = dbh.DeleteData(eID.getText().toString());
                 if (delRowQty>0){
-                    ShowInfo("ข้อความจากแอพ","ลบข้อมูลไป จำนวน "+ delRowQty + "เร็คคอร์ด");
+                    ClearText();
+                    ShowInfo("RECORD System","ลบข้อมูลไป จำนวน "+ delRowQty + "เร็คคอร์ด");
                 }else {
-                    ShowInfo("ข้อความจากแอพ","ไม่สามารถลบข้อมูลได้");
+                    ShowInfo("RECORD System","ไม่สามารถลบข้อมูลได้");
                 }
             }
         });
@@ -84,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Cursor resDat = dbh.getAllData();
                 if (resDat.getCount()==0){
-                    ShowInfo("ข้อความจากแอพ","ไม่มีข้อมูลในดาต้าเบส");
+                    ShowInfo("RECORD System","ไม่มีข้อมูลในระบบ");
                 }else {
                     StringBuffer datBuff = new StringBuffer();
                     while (resDat.moveToNext()){
@@ -97,13 +111,12 @@ public class MainActivity extends AppCompatActivity {
                         datBuff.append("เงินเดือน : "+resDat.getString(6)+"\n");
                         datBuff.append("---------------------------------"+"\n");
                     }
-                    ShowInfo("ข้อมูลที่ต้องการ",datBuff.toString());
+                    ShowInfo("RECORD System",datBuff.toString());
                 }
 
             }
         });
 
-        ShowInfo("ทดสอบ","นี่คือข้อความที่ต้องการแสดง");
     }
     private void ShowInfo(String title,String msg){
         AlertDialog.Builder ab = new AlertDialog.Builder(this);

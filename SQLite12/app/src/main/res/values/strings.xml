@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SQLite12</string>
+    <string name="app_name">RECORD System</string>
     <string name="btnAdd">เพิ่มข้อมูล</string>
     <string name="btnEdit">แก้ไขข้อมูล</string>
     <string name="btnDelete">ลบข้อมูล</string>
@@ -11,4 +11,10 @@
     <string name="age">อายุ</string>
     <string name="salary">เงินเดือน</string>
     <string name="id">รหัส</string>
+
+    <string name="home">Go to Program RECORD System</string>>
+
+    <string name="selection">COM,CEO,BD,DR</string>
+    <string name="sex1">Male,Female</string>
+    <string name="id1">ใส่เฉพาะ การลบหรือแก้ไข</string>
 </resources>
