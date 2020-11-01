@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SQLite12</string>
+    <string name="btnAdd">เพิ่มข้อมูล</string>
+    <string name="btnEdit">แก้ไขข้อมูล</string>
+    <string name="btnDelete">ลบข้อมูล</string>
+    <string name="btnViewAll">ดูข้อมูล</string>
+    <string name="name">ชื่อ</string>
+    <string name="surname">นามสกุล</string>
+    <string name="section">แผนก</string>
+    <string name="sex">เพศ</string>
+    <string name="age">อายุ</string>
+    <string name="salary">เงินเดือน</string>
+    <string name="id">รหัส</string>
+</resources>
