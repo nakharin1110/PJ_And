@@ -19,7 +19,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SQLite12" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -35,26 +38,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604157809267">
+    <state x="392" y="88" key="#Project_Structure" timestamp="1604325044911">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1604157809267" />
+    <state x="392" y="88" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1604325044911" />
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604324904366">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1604324904366" />
     <state x="529" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604157881368">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="529" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1604157881368" />
-    <state x="648" y="319" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1604157199991">
+    <state x="648" y="319" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1604324798330">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="648" y="319" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1600.860@0.0.1600.860" timestamp="1604157199991" />
+    <state x="648" y="319" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1600.860@0.0.1600.860" timestamp="1604324798330" />
     <state x="655" y="195" key="AndroidProcessChooserDialog" timestamp="1604157223948">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="655" y="195" key="AndroidProcessChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1604157223948" />
-    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1604209571993">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1604325127172">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1604209571993" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1604325127172" />
+    <state x="473" y="129" key="NewModule_or_Project.wizard" timestamp="1604324559751">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="473" y="129" key="NewModule_or_Project.wizard/0.0.1600.860@0.0.1600.860" timestamp="1604324559751" />
     <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1604157800429">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
