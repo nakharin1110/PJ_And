@@ -16,5 +16,5 @@
 
     <string name="selection">COM,CEO,BD,DR</string>
     <string name="sex1">Male,Female</string>
-    <string name="id1">ใส่เฉพาะ การลบหรือแก้ไข</string>
+    <string name="id1">การลบหรือแก้ไข</string>
 </resources>
